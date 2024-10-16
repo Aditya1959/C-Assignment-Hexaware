@@ -1,0 +1,12 @@
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Build results
+[Oo]bj/
+[Bb]in/
+
+# User-specific files
+*.dbmdl
