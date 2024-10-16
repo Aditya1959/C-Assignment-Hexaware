@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,3 +20,23 @@ namespace TicketBookingSystem
         }
     }
 }
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TicketBookingSystem.util
+{
+    public static class DBUtil
+    {
+        public static SqlConnection GetDBConn()
+        {
+            // Replace with your actual connection string
+            string connectionString = "your_connection_string_here";
+            return new SqlConnection(connectionString);
+        }
+    }
+}
+>>>>>>> c11cbd52b6042793bd6f0394833f32c967ff05fa

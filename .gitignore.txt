@@ -10,3 +10,26 @@
 
 # User-specific files
 *.dbmdl
+
+
+# Ignore build results
+/bin/
+/obj/
+*.dll
+*.pdb
+*.cache
+*.nuget/
+
+# Ignore Visual Studio specific files
+.vs/
+*.suo
+*.bin
+*.cache
+*.v9.bin
+*.dll
+*.pdb
+/obj/
+/bin/
+/project.assets.json
+
+.vs/TicketBookingSystem_Solution/FileContentIndex/

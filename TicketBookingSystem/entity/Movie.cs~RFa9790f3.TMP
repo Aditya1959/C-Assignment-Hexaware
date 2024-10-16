@@ -1,0 +1,66 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+<<<<<<< HEAD
+using TicketBookingSystem.entity;
+
+using System;
+
+namespace TicketBookingSystem
+{
+    public class Movie : Event
+    {
+=======
+namespace TicketBookingSystem.entity
+{
+    public class Movie : Event
+    {
+        // Attributes
+>>>>>>> c11cbd52b6042793bd6f0394833f32c967ff05fa
+        public string Genre { get; set; }
+        public string ActorName { get; set; }
+        public string ActressName { get; set; }
+
+<<<<<<< HEAD
+        public Movie(string eventName, DateTime eventDate, TimeSpan eventTime, Venue venue, int totalSeats, decimal ticketPrice, string genre, string actorName, string actressName)
+            : base(eventName, eventDate, eventTime, venue, totalSeats, ticketPrice)
+=======
+        // Default constructor
+        public Movie() { }
+
+        // Overloaded constructor
+        public Movie(string eventName, DateTime eventDate, TimeSpan eventTime, string venueName, int totalSeats, decimal ticketPrice, string eventType, string genre, string actorName, string actressName)
+            : base(eventName, eventDate, eventTime, venueName, totalSeats, ticketPrice, eventType)
+>>>>>>> c11cbd52b6042793bd6f0394833f32c967ff05fa
+        {
+            Genre = genre;
+            ActorName = actorName;
+            ActressName = actressName;
+<<<<<<< HEAD
+            EventType = "Movie";
+        }
+
+        public override void DisplayEventDetails()
+        {
+            Console.WriteLine($"Movie: {EventName}, Genre: {Genre}, Actor: {ActorName}, Actress: {ActressName}");
+            Console.WriteLine($"Date: {EventDate.ToShortDateString()}, Time: {EventTime}, Venue: {Venue.VenueName}");
+            Console.WriteLine($"Available Seats: {AvailableSeats}");
+=======
+        }
+
+        public Movie(string eventName, DateTime eventDate, TimeSpan eventTime, string venueName, int totalSeats, decimal ticketPrice, string eventType, string v1, string v2) : base(eventName, eventDate, eventTime, venueName, totalSeats, ticketPrice, eventType)
+        {
+        }
+
+        // Method to display movie details
+        public override void DisplayEventDetails()
+        {
+            base.DisplayEventDetails();
+            Console.WriteLine($"Genre: {Genre}, Actor: {ActorName}, Actress: {ActressName}");
+>>>>>>> c11cbd52b6042793bd6f0394833f32c967ff05fa
+        }
+    }
+}
